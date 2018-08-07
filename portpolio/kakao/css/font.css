@@ -1,0 +1,31 @@
+@charset "utf-8";
+/*
+@font-face{
+  font-family:'FontAwesome';
+  src: url('/ms-icons-regular.eot');
+  src: url('/ms-icons-regular.ttf');
+  src: url('/ms-icons-regular.woff');
+  font-weight : normal;
+  font-style : normal;
+}
+*/
+h1{vertical-align:middle;font-weight:700;font-size:54px;}
+h2{
+  font-size: 40px;
+  color: #393939;
+  font-weight: 800;
+}
+h3{
+  color: #393939;
+  font-size: 20px;
+  font-weight: 400;
+}
+h4{
+  font-size: 13px;
+  font-weight: 700;
+  
+}
+p{
+  font-size: 13px;
+  color: #8d8d8d;
+}

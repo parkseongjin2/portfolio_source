@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PㅂSㅅJㅈ</title>
+  <!-- fullpage css -->
+  <link rel="stylesheet" href="./lib/fullpage/css/jquery.fullpage.min.css">
+  <!-- bootstrapk css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <script src="./js/jquery-latest.js"></script>
+  <!-- fullpage js -->
+  <script src="./lib/fullpage/js/jquery.fullpage.min.js"></script>
+  <!-- bootstrapk js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6094e4df56397dc4f234424c6f76e00b"></script>
+  <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <!-- fixed header  -->
+  <div id="header">
+    <div class="gnb">
+      <h1 class="logo"><a href="index.html"><img src="./img/logo.png" alt="로고 이미지"></a></h1>
+      <div class="lnb_opn_trigger">
+        <a href="#">
+          <span class="glyphicon glyphicon-align-justify">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- // fixed header  -->
+  <!-- lnb wrap  -->
+  <div class="lnb_ly_dark"></div>
+  <div class="lnb_wrap">
+    <div class="lnb_clo_trigger">
+      <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    </div>
+    <ul id="lnb">
+      <li data-menuanchor="about" class="active"><a href="#about">about me</a></li>
+      <li data-menuanchor="portfolio"><a href="#portfolio">portfolio</a></li>
+      <li data-menuanchor="contact"><a href="#contact">contact</a></li>
+    </ul>
+  </div>
+  <!-- // lnb wrap  -->
+  <div id="fullpage" class="container-fluid">
+    <!-- section about  -->
+    <div class="section about">
+      <div class="slide">
+        <div class="inner_margin">
+          <div class="about_fir">
+            <div class="basic_img"><img src="./img/profile_hover.png" alt="사진대체"></div>
+            <div class="hover_img"><img src="./img/test_img.jpg" alt="증명사진"></div>
+            <h2 class="greeting">
+              안녕하세요 저의 포토폴리오 사이트를 방문해주셔서 감사합니다. <br>
+              자세한 이력서는 아래 버튼을 눌러 다운받을 수 있습니다.
+            </h2>
+            <button type="button" class="btn btn-default btn-lg"><a href="">이력서</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="inner_margin">
+          <div class="about_two row">
+            <div class="col-md-6 col-xs-12">
+              <div class="profile_wrap">
+                <div class="text_area">
+                  <p>박승진</p>
+                  <p>Park Seong Jin</p>
+                  <p>서울시 송파구 석촌동</p>
+                  <p>현재 웹 퍼블리셔를 지원하고 있으며, <br> 현재 사이트는 AWS 클라우딩 서비스를 이용하여 만들었습니다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <!-- persent color and ico bg-position change -->
+              <div class="skill_wrap">
+                <ul>
+                  <li class="clearfix">
+                    <span></span>
+                    <div class="skill">
+                      <div class="persent"><span>70%</span></div>
+                    </div>
+                  </li>
+                  <li class="clearfix">
+                    <span></span>
+                    <div class="skill">
+                      <div class="persent"><span>70%</span></div>
+                    </div>
+                  </li>
+                  <li class="clearfix">
+                    <span></span>
+                    <div class="skill">
+                      <div class="persent"><span>60%</span></div>
+                    </div>
+                  </li>
+                  <li class="clearfix">
+                    <span></span>
+                    <div class="skill">
+                      <div class="persent"><span>50%</span></div>
+                    </div>
+                  </li>
+                  <li class="clearfix">
+                    <span></span>
+                    <div class="skill">
+                      <div class="persent"><span>50%</span></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // section about  -->
+    <!-- section portfolio  -->
+    <div class="section portfolio">
+      <div class="inner_margin row">
+        <div class="portfolio_img_wrap col-md-3">
+          <ul class="clearfix">
+            <li><a href="#" data-portpolio-index="0"><img src="/portpolio/kakao/img/logo_header.png" alt="포트폴리오"></a></li>
+            <li><a href="#" data-portpolio-index="1"><img src="/portpolio/py/img/main/menu_logo.png" alt="포트폴리오"></a></li>
+            <li><a href="#" data-portpolio-index="2"><img src="/img/logo.png" alt="포트폴리오"></a></li>
+          </ul>
+        </div>
+        <div class="portfolio_detail_wrap col-md-9">
+          <div class="text_group">
+            <dl>
+              <dt>사이트명</dt>
+              <dd class="site_name"></dd>
+              <dt>사용한 스킬</dt>
+              <dd class="skill"></dd>
+              <dt>제작기간</dt>
+              <dd class="date"></dd>
+              <dt>설명</dt>
+              <dd class="explain">
+                이미지를 클릭해주세요
+              </dd>
+            </dl>
+          </div>
+          <div class="link_group clearfix">
+            <button type="button" class="btn btn-default"><a href="#" class="link">사이트 이동</a></button>
+            <button type="button" class="btn btn-default"><a href="#" class="github">소스 보기</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // section portfolio  -->
+    <!-- footer   -->
+    <div class="section fp-auto-height">
+      <div id="footer">
+        <div id="map"></div>
+        <div class="content">
+          <h3>본 사이트와 포토폴리오 및 연습 용도로 제작한 페이지입니다.</h3>
+          <div class="contact">
+            <h4>연락은 아래 연락처를 통해 부탁드립니다.</h4>
+            <span class="glyphicon glyphicon-envelope"></span>
+            <a href="mailto:ltaers86@gmail.com"><h4>ltaers86@gmail.com</h4></a>
+            <span class="glyphicon glyphicon-earphone"></span>
+            <h4>+82 10-2004-9034</h4>
+          </div>
+          <h4>COPYRIGHT © 2017 PARK SEONG JIN ALL RIGHTS RESERVED.</h4>
+        </div> 
+      </div>
+    </div>
+  </div>
+    <!-- // footer   -->
+  </div>
+  <script type="text/javascript">
+    jQuery(function($){
+      $("#fullpage").fullpage({
+        controlArrows:false,
+        slidesNavigation:true,
+        fixedElements : '#header',
+        anchors:['about', 'portfolio', 'contact'],
+        menu:'#lnb',
+        afterLoad:function(index, anchors, secIndex){
+          $('#lnb>li').eq(secIndex).addClass('active');
+        }
+      })//fullpage end
+      $lnb_opn=$('.lnb_opn_trigger');
+      $lnb_clo=$('.lnb_clo_trigger');
+      $lnbWrap=$('.lnb_wrap');
+      $darkLy=$('.lnb_ly_dark');
+      $lnb_opn.on({
+        click:function(){
+          $lnbWrap.animate({left:0},function(){
+            $darkLy.fadeIn(50);
+          })
+        }
+        // ,
+        // mouseover:function(){
+        //   $(this).trigger('click');
+        // }
+      });//lib open end
+      $lnb_clo.on({
+        click:function(){
+          $lnbWrap.animate({left:'-320px'},function(){
+            $darkLy.fadeOut(50);
+          })
+        }
+        // mouseover:function(){
+        //   $(this).trigger('click');
+        // }
+      });//lib close end
+      $darkLy.on('click',function(){
+        $lnb_clo.trigger('click');
+      });//$darkLy trigger end
+      var container = document.getElementById('map');
+      var options = {
+	      center: new daum.maps.LatLng(37.5013662, 127.10616930000003),
+	      level: 3
+      };
+      var map = new daum.maps.Map(container, options);
+      $(".portfolio_img_wrap ul li a").on('click', function(){
+        console.log('test ok!!');
+        var data_index = $(this).data('portpolio-index');
+        console.log(data_index);
+        $.ajax({
+          url:'/lib/data/portpolio.json',
+          dataType:'json',
+          success:function(data){
+            $("dd.site_name").text(data.obj[data_index].id);
+            $("dd.skill").text(data.obj[data_index].skill);
+            $("dd.date").text(data.obj[data_index].date);
+            $("dd.explain").text(data.obj[data_index].explain);
+            $("a.link").attr("href",data.obj[data_index].link);
+            $("a.github").attr("href",data.obj[data_index].github);
+          }
+        });//ajax end
+      });//data click end
+    });//jquery end
+  </script>
+</body>
+</html>

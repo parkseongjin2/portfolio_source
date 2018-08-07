@@ -1,0 +1,74 @@
+/*footer start */
+.footer{
+  width: 100%;
+  height: auto; 
+  background: #ffe600;
+}
+.footer>.content{
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  max-width: 1100px;
+  padding: 80px 0 75px;
+  margin: 0 auto;
+}
+.footer>.content::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+.footer>.content>.left{
+  width: 25%;
+  height: 180px;
+  float: left;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.footer>.content>.left>img{
+  display: block;
+}
+.footer>.content>.left>img:nth-of-type(1){
+  width: 176px;
+  height: 32px;
+}
+.footer>.content>.left>img:nth-of-type(2){
+  width: 140px;
+  height: 22px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.footer>.content>.center{
+  width: 50%;
+  height: 180px;
+  float: left;
+}
+.footer>.content>.center>a{
+  display: block;
+  line-height: 24px;
+  font-size: 14px;
+  color: #393939;
+  font-weight: bold;
+}
+.footer>.content>.center>p{
+  line-height: 24px;
+  font-size: 14px;
+  color: #393939;
+  margin-top: 5px;
+}
+.footer>.content>.center>p:nth-of-type(1){
+  margin-top: 25px;
+}
+.footer>.content>.center>p:nth-of-type(4){
+  font-weight: bold;
+  margin-top: 25px;
+}
+.footer>.content>.center>p strong{
+  margin-right: 7px;
+}
+.footer>.content>.right{
+  width: 25%;
+  height: 180px;
+  float: left;
+}
